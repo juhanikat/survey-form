@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Survey Form</title>
+    <link rel='stylesheet' href='css/stylesheet.css'>
+</head>
+
+<body>
+    <header>
+    <h1 id='title'>Survey Form</h1>
+    <p id='description'>A very important survey.</p>
+    </header>
+
+    <form id='survey-form'>
+        <label for='name' id='name-label'>Name:</label><br>
+        <input id='name' type='text' name='name' placeholder="Input your name"><br>
+        <label for='email' id='email-label'>Email:</label><br>
+        <input id='email' type='email' name='email' placeholder="Input your email"><br>
+        <label for='number' id='number-label'>Favorite number:</label><br>
+        <input type='number' min='0' max='120' name='number' id="number" placeholder="Input your favorite number"><br>
+
+        <label for='dropdown' id='dropdown-label'>What is your favorite phone manufacturer?</label><br>
+        <select name='phones' id='dropdown'>
+            <option value="Samsung">Samsung</option>
+            <option value='iphone'>iPhone</option>
+            <option value="oneplus">OnePlus</option>
+            <option value='nokia'>Nokia</option>
+            <option value='other'>Something else</option>
+        </select><br>
+
+        <p>Select your gender</p>
+        <div id='genders'>
+            <label for='male'>Male</label>
+            <input type='radio' name='gender' value='male' id='male'>
+            <label for='female'>Female</label>
+            <input type='radio' name='gender' value='female' id='female'>
+            <label for='other'>Other</label>
+            <input type='radio' name='gender' value='other' id='other'><br>
+        </div>
+
+        <div id='cities'>
+            <p>Which of these cities have you visited in the last 3 years?</p>
+            <label for='london'>London</label>
+            <input type='checkbox' id='london' value='london'>
+            <label for='helsinki'>Helsinki</label>
+            <input type='checkbox' id='helsinki' value='helsinki'>
+            <label for='budapest'>Budapest</label>
+            <input type='checkbox' id='budapest' value='budapest'>
+            <label for='berlin'>Berlin</label>
+            <input type='checkbox' id='berlin' value='berlin'><br>
+        </div>
+
+        <textarea id='textarea' rows='4' placeholder="Additional comments"></textarea><br>
+
+        <button id='submit'>Submit</button>
+    </form>
+</body>
+
+
+
+
+
+</html>
