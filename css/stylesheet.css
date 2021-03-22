@@ -1,22 +1,38 @@
+html {
+    height: 100%;
+    background-image: linear-gradient(rgb(223, 155, 219), rgb(94, 146, 224));
+}
+
 #survey-form {
+    background-image: linear-gradient(rgb(73, 157, 226), rgb(62, 156, 112));
     font-family: 'Courier New', Courier, monospace;
     margin-left: 30%;
     margin-right: 30%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 60vh;
+    height: 65%;
 }
 
+#survey-form > * {
+    margin-left: 2%;
+}
+
+
 header {
+    background-color: rgb(209, 115, 87);
     font-family: 'sans-serif';
     margin: auto;
     width: 40%;
-    border: 5px solid rgb(204, 29, 29);
+    border: 5px solid rgb(173, 54, 54);
     text-align: center;
 }
 
+#name-label, #email-label, #number-label {
+    margin-top: 1%;
+}
 #name, #email, #number {
+    margin-bottom: 1%;
     width: 50%;
 }
 
@@ -24,12 +40,13 @@ header {
     width: 30%;
 }
 #textarea {
-    margin-top: 2vh;
+    margin-top: 2%;
     width: 60%;
 }
 
 #submit {
     width: 10vw;
-    margin-top: 2vh;
+    margin-top: 2%;
+    margin-bottom: 2%;
     align-self: center;
 }
